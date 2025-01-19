@@ -1,0 +1,117 @@
+-- Обновленный список команд
+local commands = {
+    ";avtor", ";gh", ";na2", ";inf", ";na1", ";le", ";tfling", ";fly", ";fly2", ";qcmd",
+    ";tfling2", ";bp1", ";bp2", ";bp3", ";tel1", ";tel2", ";glios", ";cmds", ";hth",
+    ";zomb", ";knpc", ";jerk", ";punch", ";invis2", ";invis", ";tel3", ";roa", ";akp1", ";akp2",
+    ";prox", ";rochips", ";fc1", ";fc2", ";fc3", ";srp", ";srp2", ";tictactoe", ";illus", ";toolgui", ";keyb", ";wibtt", ";acl", ";krunox", ";tptool"
+}
+
+-- Обработчик нажатия кнопки Execute
+executeButton.MouseButton1Click:Connect(function()
+    local codeToExecute = textBox.Text
+    if codeToExecute == ";cmds" then
+        -- Выводим список команд в текстовое поле
+        textBox.Text = "Существующие команды:\n" .. table.concat(commands, "\n") .. "\n\nНовые команды:\n;fly\n;fly2\n;qcmd\n;jerk\n;punch\n;akp1\n;akp2"
+    elseif codeToExecute == ";tptool" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sovetskii-shashlik/Tptool/refs/heads/main/Tptool"))()
+    elseif codeToExecute == ";jerk" then
+        -- This one is r6:
+        loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))()
+        -- This one is r15:
+        loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
+    elseif codeToExecute == ";acl" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua"))()
+    elseif codeToExecute == ";qcmd" then
+        loadstring(game:HttpGet("https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw"))()
+    elseif codeToExecute == ";knpc" then
+        loadstring(game:HttpGet("https://pastebin.com/raw/DcSXwXqC"))()
+    elseif codeToExecute == ";krunox" then
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Krunox-13336"))()
+    elseif codeToExecute == ";srp2" then
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Open-Source-Ring-Parts-26702"))()
+    elseif codeToExecute == ";toolgui" then
+        loadstring(game:HttpGet("https://pastebin.com/raw/ZvstfPXM"))()
+    elseif codeToExecute == ";illus" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt"))()
+    elseif codeToExecute == ";hth" then
+        loadstring(game:HttpGet('https://pastefy.app/tI5b3OVD/raw'))()
+    elseif codeToExecute == ";zomb" then
+        loadstring(game:HttpGet('https://pastefy.app/w7KnPY70/raw'))()
+    elseif codeToExecute == ";wibtt" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/BaconBossScript/Crazy/main/Crazy'))()
+    elseif codeToExecute == ";keyb" then
+        loadstring(game:HttpGet('https://pastefy.app/Te4dwSw2/raw'))()
+    elseif codeToExecute == ";roa" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/new/refs/heads/main/cmd.lua"))() --команды rochips--
+    elseif codeToExecute == ";fly" then
+        loadstring(game:HttpGet('https://pastefy.app/M0N30XXG/raw'))()
+    elseif codeToExecute == ";srp" then
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SUPER-RING-PARTS-V3-WITH-NO-MESSAGE-26385"))()
+    elseif codeToExecute == ";fc1" then
+        loadstring(game:HttpGet('https://pastefy.app/9CDN9Kaj/raw'))()
+    elseif codeToExecute == ";fc2" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/CameraSpy/main/Script"))()
+    elseif codeToExecute == ";fc3" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Freecam'))()
+    elseif codeToExecute == ";fly2" then
+        loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+    elseif codeToExecute == ";tfling" then
+        loadstring(game:HttpGet("https://pastebin.com/raw/rfKaavP3"))()
+    elseif codeToExecute == ";tfling2" then -- fling ez
+        loadstring(game:HttpGet('https://pastebin.com/raw/TXMNj1yy'))()
+    elseif codeToExecute == ";avtor" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Avtor1zaTion/Avtor/main/AvtorHub'))()
+    elseif codeToExecute == ";gh" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+    elseif codeToExecute == ";na2" then
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Nameless-admin-14114"))()
+    elseif codeToExecute == ";tictactoe" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/Tic%20Tac%20Toe'))()
+    elseif codeToExecute == ";inf" then
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Infinite-Yield-Reborn-Legacy-21819"))()
+    elseif codeToExecute == ";na1" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Silly-Exploiter/NamedAdmin/main/bamed%20admen.txt'))()
+    elseif codeToExecute == ";le" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sovetskii-shashlik/Lelele-bypasser/refs/heads/main/LeLeBypasser.txt"))()
+    elseif codeToExecute == ";bp1" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BringFlingPlayers"))()
+    elseif codeToExecute == ";bp2" then
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Better-Bring-Parts-Ui-SOLARA-and-Fixed-Lags-21780"))()
+    elseif codeToExecute == ";bp3" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GoofyBlox/GoofyZ/refs/heads/main/Best/Vortex.lua"))()
+    elseif codeToExecute == ";tel1" then
+        loadstring(game:HttpGet("https://rawscripts.net/raw/a-literal-baseplate.-FE-Telekinesis-15523"))()
+    elseif codeToExecute == ";tel2" then
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty11.lua"))()
+    elseif codeToExecute == ";glios" then
+        writefile(".nonecing", "white")
+        loadstring(game:HttpGet('https://glot.io/snippets/gua2ntmbdm/raw/main.lua'))()
+    elseif codeToExecute == ";punch" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling", true))()
+    elseif codeToExecute == ";akp1" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main", true))()
+    elseif codeToExecute == ";akp2" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sovetskii-shashlik/Anti-kill-parts-updated-/refs/heads/main/Anti%20kill%20parts%20by%20Zephyr"))()
+    elseif codeToExecute == ";tel3" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sakupenXD/SakupScripts/main/Telekinesis"))()
+    elseif codeToExecute == ";invis" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Luarmor123/community-Y-HUB/refs/heads/main/invisible-button"))()
+    elseif codeToExecute == ";prox" then
+        for i,v in ipairs(game:GetService("Workspace"):GetDescendants()) do
+            if v.ClassName == "ProximityPrompt" then
+                v.HoldDuration = 0
+            end
+        end
+    elseif codeToExecute == ";invis2" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudHub111/Scripts/refs/heads/main/Fe%20Invisible%20Beta", Beta))()
+    elseif codeToExecute == ";rochips" then
+        if "you wanna use rochips universal" then 	local z_x,z_z="gzrux646yj/raw/main.ts","https://glot.io/snippets/" 	local im,lonely,z_c=task.wait,game,loadstring 	z_c(lonely:HttpGet(z_z..""..z_x))() 	return ("This will load in about 2 - 30 seconds" or "according to your device and executor") end 
+    else
+        local success, errorMessage = pcall(function()
+            loadstring(codeToExecute)()
+        end)
+        if not success then
+            print("Ошибка выполнения кода: " .. errorMessage)
+        end
+    end
+end)
